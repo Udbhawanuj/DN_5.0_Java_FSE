@@ -1,0 +1,5 @@
+Linear Search Result:
+Product ID: 103, Name: Watch, Category: Accessories
+
+Binary Search Result:
+Product ID: 105, Name: Mobile Phone, Category: Electronics

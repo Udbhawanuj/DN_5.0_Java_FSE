@@ -1,0 +1,4 @@
+Logger instance created.
+[LOG] Application started.
+[LOG] User login event captured.
+Both logger objects are the same instance: true
