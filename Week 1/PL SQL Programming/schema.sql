@@ -1,0 +1,85 @@
+SET SERVEROUTPUT ON;
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Transactions';
+EXCEPTION WHEN OTHERS THEN NULL;
+END;
+/
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Loans';
+EXCEPTION WHEN OTHERS THEN NULL;
+END;
+/
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Accounts';
+EXCEPTION WHEN OTHERS THEN NULL;
+END;
+/
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Employees';
+EXCEPTION WHEN OTHERS THEN NULL;
+END;
+/
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Customers';
+EXCEPTION WHEN OTHERS THEN NULL;
+END;
+/
+CREATE TABLE Customers (
+    CustomerID NUMBER PRIMARY KEY,
+    Name VARCHAR2(100),
+    DOB DATE,
+    Balance NUMBER,
+    IsVIP VARCHAR2(5) DEFAULT 'FALSE',
+    LastModified DATE
+);
+CREATE TABLE Accounts (
+    AccountID NUMBER PRIMARY KEY,
+    CustomerID NUMBER,
+    AccountType VARCHAR2(20),
+    Balance NUMBER,
+    LastModified DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+
+CREATE TABLE Transactions (
+    TransactionID NUMBER PRIMARY KEY,
+    AccountID NUMBER,
+    TransactionDate DATE,
+    Amount NUMBER,
+    TransactionType VARCHAR2(10),
+    FOREIGN KEY (AccountID) REFERENCES Accounts(AccountID)
+);
+CREATE TABLE Loans (
+    LoanID NUMBER PRIMARY KEY,
+    CustomerID NUMBER,
+    LoanAmount NUMBER,
+    InterestRate NUMBER,
+    StartDate DATE,
+    EndDate DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+CREATE TABLE Employees (
+    EmployeeID NUMBER PRIMARY KEY,
+    Name VARCHAR2(100),
+    Position VARCHAR2(50),
+    Salary NUMBER,
+    Department VARCHAR2(50),
+    HireDate DATE
+);
+INSERT INTO Customers VALUES (1, 'John Doe', TO_DATE('1958-05-15', 'YYYY-MM-DD'), 12000, 'FALSE', SYSDATE);
+INSERT INTO Customers VALUES (2, 'Jane Smith', TO_DATE('1990-07-20', 'YYYY-MM-DD'), 8500, 'FALSE', SYSDATE);
+INSERT INTO Customers VALUES (3, 'Ravi Kumar', TO_DATE('1975-02-10', 'YYYY-MM-DD'), 15000, 'FALSE', SYSDATE);
+INSERT INTO Accounts VALUES (101, 1, 'Savings', 10000, SYSDATE);
+INSERT INTO Accounts VALUES (102, 2, 'Checking', 8000, SYSDATE);
+INSERT INTO Accounts VALUES (103, 3, 'Savings', 15000, SYSDATE);
+INSERT INTO Loans VALUES (201, 1, 5000, 8.5, SYSDATE, SYSDATE + 20);
+INSERT INTO Loans VALUES (202, 2, 7000, 9.0, SYSDATE, SYSDATE + 45);
+INSERT INTO Loans VALUES (203, 3, 6000, 7.5, SYSDATE, SYSDATE + 10);
+INSERT INTO Employees VALUES (301, 'Alice Johnson', 'Manager', 70000, 'HR', TO_DATE('2015-06-15', 'YYYY-MM-DD'));
+INSERT INTO Employees VALUES (302, 'Bob Brown', 'Developer', 60000, 'IT', TO_DATE('2017-03-20', 'YYYY-MM-DD'));
+INSERT INTO Employees VALUES (303, 'Neha Sharma', 'Tester', 55000, 'IT', TO_DATE('2019-04-10', 'YYYY-MM-DD'));
+COMMIT;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Schema and sample data created successfully.');
+END;
+/

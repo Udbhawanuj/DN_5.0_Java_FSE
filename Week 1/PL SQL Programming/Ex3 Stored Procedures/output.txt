@@ -1,0 +1,4 @@
+Schema and sample data created successfully.
+Monthly interest processed for savings accounts.
+Bonus updated for department: IT
+Amount transferred successfully.
