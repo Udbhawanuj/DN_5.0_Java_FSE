@@ -1,0 +1,9 @@
+Schema and sample data created successfully.
+Scenario 1: Apply 1% interest discount for customers above 60 years old
+Discount applied for John Doe, Loan ID: 201
+Scenario 2: Mark customers as VIP if balance is greater than 10000
+John Doe marked as VIP.
+Ravi Kumar marked as VIP.
+Scenario 3: Print reminders for loans due within next 30 days
+Reminder: Loan ID 201 for John Doe is due on 11-JUL-2026
+Reminder: Loan ID 203 for Ravi Kumar is due on 01-JUL-2026
