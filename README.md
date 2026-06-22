@@ -18,7 +18,7 @@ DN-5.0-Java-FSE
 ├── Week 5
 ├── Week 6
 └── Week 7
-````
+
 
 ## Purpose
 
@@ -38,6 +38,3 @@ The purpose of this repository is to maintain a structured record of my learning
 * Angular / React
 * Git and CI/CD
 * DevOps, Docker, Cloud, and GenAI fundamentals
-
-```
-```
