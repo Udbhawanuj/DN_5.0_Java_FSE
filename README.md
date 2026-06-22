@@ -1,4 +1,4 @@
-````markdown
+
 # DN 5.0 Java FSE
 
 This repository contains my week-wise hands-on practice work for the Cognizant Digital Nurture 5.0 Java FSE track.
