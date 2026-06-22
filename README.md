@@ -1,4 +1,4 @@
-
+````markdown
 # DN 5.0 Java FSE
 
 This repository contains my week-wise hands-on practice work for the Cognizant Digital Nurture 5.0 Java FSE track.
@@ -9,7 +9,7 @@ I will be updating this repository from Week 1 to Week 7 with mandatory hands-on
 
 The repository is organized week-wise for easy tracking and review.
 
-
+```text
 DN-5.0-Java-FSE
 ├── Week 1
 ├── Week 2
@@ -18,7 +18,7 @@ DN-5.0-Java-FSE
 ├── Week 5
 ├── Week 6
 └── Week 7
-
+````
 
 ## Purpose
 
