@@ -1,15 +1,15 @@
 # DN 5.0 Java FSE
 
-This repository contains my week-wise hands-on practice work for the Cognizant Digital Nurture 5.0 Java FSE track.
+This repository contains my week wise hands on practice work for the Cognizant Digital Nurture 5.0 Java FSE track.
 
-I will be updating this repository from Week 1 to Week 7 with mandatory hands-on exercises, practice solutions, output files, and related notes covered during the learning program.
+I will be updating this repository from Week 1 to Week 7 with mandatory hands on exercises, practice solutions, output files, and related notes covered during the learning program.
 
 ## Repository Structure
 
-The repository is organized week-wise for easy tracking and review.
+The repository is organized week wise for easy tracking and review.
 
 ```text
-DN-5.0-Java-FSE
+DN 5.0 Java FSE
 ├── Week 1
 ├── Week 2
 ├── Week 3
@@ -21,7 +21,7 @@ DN-5.0-Java-FSE
 
 ## Purpose
 
-The purpose of this repository is to maintain a structured record of my learning and hands-on implementation throughout the Digital Nurture 5.0 Java FSE program.
+The purpose of this repository is to maintain a structured record of my learning and hands on implementation throughout the Digital Nurture 5.0 Java FSE program.
 
 ## Topics Covered
 
