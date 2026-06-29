@@ -8,22 +8,3 @@ In this exercise I created a simple document management system using the Factory
 * Inheritance
 * Polymorphism
 * Object creation through factory classes
-
-
-## How to Run
-```bash
-javac *.java
-java FactoryMethodTest
-```
-
-
-## Output
-```text
-Opening Word document...
-Opening PDF document...
-Opening Excel document...
-```
-
-
-## What I Learned
-This exercise helped me understand how Factory Method keeps object creation separate from the main code it makes the program easier to manage and extend when new document types are added
