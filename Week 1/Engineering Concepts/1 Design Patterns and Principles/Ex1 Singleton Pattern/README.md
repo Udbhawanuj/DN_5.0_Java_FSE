@@ -8,19 +8,3 @@ In this exercise I created a `Logger` class using the Singleton Design Pattern t
 * Static object
 * `getInstance()` method
 * Checking if both objects are the same
-
-
-## How to Run
-```bash
-javac *.java
-java LoggerTest
-```
-
-
-## Output
-```text
-Logger instance created
-[LOG] Application started
-[LOG] User login event captured
-Both logger objects are the same instance: true
-```
