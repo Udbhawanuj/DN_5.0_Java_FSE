@@ -1,0 +1,4 @@
+Spring context loaded successfully.
+BookService received BookRepository using setter injection.
+Saving book: Effective Java
+Book added successfully.

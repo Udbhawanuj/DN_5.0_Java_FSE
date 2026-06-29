@@ -1,0 +1,5 @@
+Maven project created successfully.
+Spring Context dependency added.
+Spring AOP dependency added.
+Spring Web MVC dependency added.
+Maven Compiler Plugin configured successfully.

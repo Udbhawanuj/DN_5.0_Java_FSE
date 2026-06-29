@@ -1,0 +1,18 @@
+JPA, Hibernate, and Spring Data JPA Comparison
+
+JPA:
+- JPA is a specification used for ORM in Java.
+- It defines annotations and interfaces but does not provide implementation by itself.
+
+Hibernate:
+- Hibernate is an implementation of the JPA specification.
+- It handles the actual database operations and object-relational mapping.
+
+Spring Data JPA:
+- Spring Data JPA is built on top of JPA.
+- It reduces boilerplate code by providing repository interfaces like JpaRepository.
+
+Conclusion:
+JPA defines the rules, Hibernate implements them, and Spring Data JPA makes data access easier.
+
+BUILD SUCCESS

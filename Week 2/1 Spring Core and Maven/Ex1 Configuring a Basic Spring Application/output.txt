@@ -1,0 +1,4 @@
+Spring context loaded successfully.
+BookService bean created successfully.
+BookRepository bean created successfully.
+Sample book from repository: Clean Code

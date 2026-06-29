@@ -1,0 +1,9 @@
+Spring Data JPA example started successfully.
+Countries saved successfully.
+All countries:
+Country{code='IN', name='India'}
+Country{code='US', name='United States'}
+Country{code='JP', name='Japan'}
+Country found by code IN: Country{code='IN', name='India'}
+
+BUILD SUCCESS
