@@ -1,0 +1,9 @@
+POST http://localhost:8085/authenticate
+
+Request:
+{"username":"user","password":"pwd"}
+
+Response:
+{"token":"<generated-token>"}
+
+BUILD SUCCESS
