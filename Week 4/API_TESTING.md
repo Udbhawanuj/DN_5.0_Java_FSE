@@ -1,0 +1,14 @@
+# API Testing
+- Account: `GET http://localhost:8080/accounts/00987987973432`
+- Loan: `GET http://localhost:8081/loans/H00987987972342`
+- Greet direct: `GET http://localhost:8082/greet`
+- Greet via gateway: `GET http://localhost:9090/greet-service/greet`
+- User: `POST/GET http://localhost:8101/users`
+- Order: `POST/GET http://localhost:8102/orders`
+- Product: `POST/GET http://localhost:8201/products`
+- Inventory: `POST/GET http://localhost:8202/inventory`
+- Customer gateway: `GET http://localhost:9090/api/customers`
+- Billing gateway: `GET http://localhost:9090/api/bills`
+- Payment: `GET http://localhost:8401/payments?delay=6000`
+- JWT: `POST http://localhost:8501/auth/token?username=udbhaw`
+- Protected resource: `GET http://localhost:8503/secure` with Bearer token.

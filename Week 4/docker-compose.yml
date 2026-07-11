@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:16
+    environment: { POSTGRES_DB: week4, POSTGRES_USER: postgres, POSTGRES_PASSWORD: postgres }
+    ports: [ "5432:5432" ]
+  redis:
+    image: redis:7-alpine
+    ports: [ "6379:6379" ]
+  sonarqube:
+    image: sonarqube:lts-community
+    ports: [ "9000:9000" ]
