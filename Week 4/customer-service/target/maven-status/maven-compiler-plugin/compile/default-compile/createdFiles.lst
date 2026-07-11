@@ -1,0 +1,4 @@
+com\cognizant\customer\model\Customer.class
+com\cognizant\customer\controller\CustomerController.class
+com\cognizant\customer\CustomerServiceApplication.class
+com\cognizant\customer\repository\CustomerRepository.class
