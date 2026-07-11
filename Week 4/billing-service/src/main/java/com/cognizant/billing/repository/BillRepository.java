@@ -1,0 +1,1 @@
+package com.cognizant.billing.repository;import com.cognizant.billing.model.Bill;import org.springframework.data.jpa.repository.JpaRepository;public interface BillRepository extends JpaRepository<Bill,Long>{}

@@ -1,0 +1,1 @@
+package com.cognizant.gateway.controller;import org.springframework.web.bind.annotation.*;import reactor.core.publisher.Mono;import java.util.Map;@RestController public class FallbackController{@GetMapping("/fallback")public Mono<Map<String,String>> fallback(){return Mono.just(Map.of("status","fallback","message","Service temporarily unavailable"));}}

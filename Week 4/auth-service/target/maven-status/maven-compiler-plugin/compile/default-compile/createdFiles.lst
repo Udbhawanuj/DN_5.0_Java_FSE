@@ -1,0 +1,3 @@
+com\cognizant\auth\controller\AuthController.class
+com\cognizant\auth\AuthServiceApplication.class
+com\cognizant\auth\config\SecurityConfig.class
