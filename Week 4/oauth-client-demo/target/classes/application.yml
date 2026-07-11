@@ -1,0 +1,8 @@
+server: { port: 8502 }
+spring:
+  application.name: oauth-client-demo
+  security.oauth2.client.registration.google:
+    client-id: ${GOOGLE_CLIENT_ID:replace-with-client-id}
+    client-secret: ${GOOGLE_CLIENT_SECRET:replace-with-client-secret}
+    scope: openid,profile,email
+management.endpoints.web.exposure.include: health,info

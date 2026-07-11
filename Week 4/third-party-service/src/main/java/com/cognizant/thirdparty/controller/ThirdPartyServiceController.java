@@ -1,0 +1,1 @@
+package com.cognizant.thirdparty.controller;import org.springframework.web.bind.annotation.*;import java.util.Map;@RestController public class ThirdPartyServiceController{@GetMapping("/third-party/pay") public Map<String,Object> pay(@RequestParam(defaultValue="0") long delay)throws Exception{if(delay>0)Thread.sleep(delay);return Map.of("status","SUCCESS","provider","MockPay");}}

@@ -1,0 +1,3 @@
+com\cognizant\resource\SecureResourceServiceApplication.class
+com\cognizant\resource\controller\SecureController.class
+com\cognizant\resource\config\ResourceServerConfig.class

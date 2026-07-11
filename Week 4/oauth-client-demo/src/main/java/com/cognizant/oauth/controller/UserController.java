@@ -1,0 +1,1 @@
+package com.cognizant.oauth.controller;import java.security.Principal;import java.util.Map;import org.springframework.web.bind.annotation.*;@RestController public class UserController{@GetMapping("/")Map<String,String> home(){return Map.of("message","OAuth2/OIDC client demo","login","/oauth2/authorization/google");}@GetMapping("/user")Principal user(Principal p){return p;}}

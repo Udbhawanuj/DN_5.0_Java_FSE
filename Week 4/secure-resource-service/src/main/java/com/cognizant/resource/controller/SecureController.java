@@ -1,0 +1,1 @@
+package com.cognizant.resource.controller;import java.util.Map;import org.springframework.security.core.Authentication;import org.springframework.web.bind.annotation.*;@RestController public class SecureController{@GetMapping("/secure")Map<String,String> secure(Authentication a){return Map.of("message","This is a secure endpoint","user",a.getName());}}

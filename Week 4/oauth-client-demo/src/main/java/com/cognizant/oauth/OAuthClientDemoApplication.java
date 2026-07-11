@@ -1,0 +1,1 @@
+package com.cognizant.oauth;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;@SpringBootApplication public class OAuthClientDemoApplication{public static void main(String[] a){SpringApplication.run(OAuthClientDemoApplication.class,a);}}

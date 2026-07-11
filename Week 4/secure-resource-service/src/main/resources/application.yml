@@ -1,0 +1,4 @@
+server: { port: 8503 }
+spring.application.name: secure-resource-service
+security.jwt.secret: 01234567890123456789012345678901
+management.endpoints.web.exposure.include: health,info

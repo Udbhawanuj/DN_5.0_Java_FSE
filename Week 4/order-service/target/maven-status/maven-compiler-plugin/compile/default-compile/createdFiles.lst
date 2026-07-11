@@ -1,0 +1,5 @@
+com\cognizant\order\OrderServiceApplication.class
+com\cognizant\order\controller\OrderController.class
+com\cognizant\order\repository\CustomerOrderRepository.class
+com\cognizant\order\client\UserClient.class
+com\cognizant\order\model\CustomerOrder.class

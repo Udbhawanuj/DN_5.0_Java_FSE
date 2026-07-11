@@ -1,0 +1,1 @@
+package com.cognizant.order.client;import org.springframework.cloud.openfeign.FeignClient;import org.springframework.web.bind.annotation.*;import java.util.Map;@FeignClient(name="user-service") public interface UserClient{@GetMapping("/users/{id}") Map<String,Object> user(@PathVariable Long id);}
