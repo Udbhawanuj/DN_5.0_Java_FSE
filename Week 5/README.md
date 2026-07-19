@@ -1,8 +1,6 @@
-# Cognizant Digital Nurture 5.0 - Java FSE Angular Week 5
+# Week 5
+This repository contains my Week 5 Angular hands on submission. All ten exercises are implemented in one Student Course Portal project, as required in the supplied exercise book
 
-**Student Name:** Udbhaw Anuj
-
-This repository contains my Week 5 Angular hands-on submission. All ten exercises are implemented in one Student Course Portal project, as required in the supplied exercise book.
 
 ## Covered
 - Angular standalone project setup and components
@@ -14,20 +12,3 @@ This repository contains my Week 5 Angular hands-on submission. All ten exercise
 - HttpClient, JSON Server, RxJS error handling and interceptors
 - NgRx actions, reducer, selectors and effects
 - Jasmine/Karma component and service tests
-
-## Run
-```bash
-npm install
-npm run api
-# open another terminal
-npm start
-```
-Open `http://localhost:4200`.
-
-## Build and test
-```bash
-npm run build
-npm test
-```
-
-`node_modules`, `dist`, `.angular` and coverage files are excluded through `.gitignore`.
