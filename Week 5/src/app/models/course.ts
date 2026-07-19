@@ -1,1 +1,0 @@
-export interface Course { id:number; name:string; instructor:string; credits:number; category:string; enrolled:boolean; grade?:number; }
