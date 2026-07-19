@@ -1,0 +1,1 @@
+import { CanDeactivateFn } from '@angular/router'; export interface CanLeave { canDeactivate():boolean; } export const pendingChangesGuard:CanDeactivateFn<CanLeave>=(c)=>c.canDeactivate();
