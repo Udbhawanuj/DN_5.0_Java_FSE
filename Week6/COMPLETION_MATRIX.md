@@ -21,6 +21,7 @@
 - [x] HOL 18 – Component unit tests and snapshot
 - [x] HOL 19 – Axios service with mocked unit test
 
+
 ## Git and engineering practice
 - [x] Git HOL 1–5 command guides and sample files
 - [x] Chrome DevTools and VS Code debugging guide
