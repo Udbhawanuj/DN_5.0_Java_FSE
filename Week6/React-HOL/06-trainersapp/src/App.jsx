@@ -1,0 +1,6 @@
+import {BrowserRouter,Routes,Route,Link,Navigate,useParams} from 'react-router-dom';
+const trainers=[{id:'T001',name:'John',email:'john@example.com',phone:'9876543210',technology:'Java',skills:['Spring','Microservices']},{id:'T002',name:'Priya',email:'priya@example.com',phone:'9988776655',technology:'React',skills:['JSX','Hooks','Router']}];
+const Home=()=> <div className="card"><h2>Welcome to My Academy</h2></div>;
+function TrainerList(){return <div className="card"><h2>Trainers</h2><ul>{trainers.map(t=><li key={t.id}><Link to={'/trainers/'+t.id}>{t.name}</Link></li>)}</ul></div>};
+function TrainerDetail(){const {id}=useParams();const t=trainers.find(x=>x.id===id);return t?<div className="card"><h2>{t.name}</h2><p>{t.email} | {t.phone}</p><p>{t.technology}: {t.skills.join(', ')}</p></div>:<p>Trainer not found</p>};
+export default function App(){return <BrowserRouter><main><h1>Trainer Management</h1><nav><Link to="/home">Home</Link><Link to="/trainers">Trainers</Link></nav><Routes><Route path="/" element={<Navigate to="/home"/>}/><Route path="/home" element={<Home/>}/><Route path="/trainers" element={<TrainerList/>}/><Route path="/trainers/:id" element={<TrainerDetail/>}/></Routes></main></BrowserRouter>}

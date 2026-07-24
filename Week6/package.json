@@ -1,0 +1,22 @@
+{
+  "name": "week6-complete-submission-udbhaw-anuj",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cognizant Digital Nurture 5.0 Java FSE Week 6 - React, Git, debugging and CI/CD",
+  "workspaces": [
+    "React-HOL/*"
+  ],
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "start": "npm run start --workspace=01-myfirstreact",
+    "hol": "node scripts/run-hol.mjs",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspace=18-cohorttestingapp && npm run test --workspace=19-gitclientapp",
+    "verify": "npm run build && npm test"
+  },
+  "overrides": {
+    "cheerio": "1.0.0-rc.12"
+  }
+}

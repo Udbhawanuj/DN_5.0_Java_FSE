@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Cohort Details Component > should always render same html 1`] = `"<div class="card"><h3>INTADMDF10</h3><p>Java FSE</p><p>Ongoing</p></div>"`;

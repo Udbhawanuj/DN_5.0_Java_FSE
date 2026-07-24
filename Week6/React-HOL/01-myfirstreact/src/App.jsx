@@ -1,0 +1,1 @@
+export default function App(){return <main className="card"><h1>Welcome to the first session of React</h1><p>React environment setup is working successfully.</p></main>}
