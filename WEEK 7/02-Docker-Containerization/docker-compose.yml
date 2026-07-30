@@ -1,0 +1,38 @@
+services:
+  task-service:
+    build:
+      context: ./task-service
+    environment:
+      PORT: "8080"
+      TASK_DATA_FILE: /app/data/tasks.tsv
+    expose:
+      - "8080"
+    volumes:
+      - task-data:/app/data
+    networks:
+      - week7-network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+
+  reverse-proxy:
+    image: nginx:1.27-alpine
+    depends_on:
+      task-service:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - week7-network
+
+volumes:
+  task-data:
+
+networks:
+  week7-network:
+    driver: bridge
