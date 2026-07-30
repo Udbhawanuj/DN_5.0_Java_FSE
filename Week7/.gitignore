@@ -1,0 +1,11 @@
+**/build/
+**/data/
+*.class
+*.jar
+*.log
+.env
+*.pem
+*.p12
+.idea/
+.vscode/
+.DS_Store

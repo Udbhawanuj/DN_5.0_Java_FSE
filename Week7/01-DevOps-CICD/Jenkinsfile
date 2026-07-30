@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps { checkout scm }
+        }
+        stage('Verify Java Labs') {
+            steps {
+                dir('WEEK 7') {
+                    sh 'chmod +x verify-week7.sh 02-Docker-Containerization/task-service/*.sh 05-GenAI-Fundamentals/genai-lab/*.sh'
+                    sh './verify-week7.sh'
+                }
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                dir('WEEK 7/02-Docker-Containerization/task-service') {
+                    sh 'docker build -t week7-task-service:${BUILD_NUMBER} .'
+                }
+            }
+        }
+    }
+    post {
+        always { cleanWs() }
+    }
+}
